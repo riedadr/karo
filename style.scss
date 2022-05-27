@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Osake;
+    src: url("assets/font/osake-x3oqj.otf") format("opentype");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --wasabi: #84af75;
+    --dark-fg: #111827;
+    --dark-bg: #1f2937;
+    --nav-height: 4rem;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: var(--nav-height);
+    padding: 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-fg);
+    align-items: center;
+
+    img {
+        height: 100%;
+    }
+}
+
+main {
+    position: absolute;
+    top: var(--nav-height);
+    width: 100vw;
+    padding: 0.25rem;
+    color: white;
+
+    table {
+        width: 100%;
+        text-align: left;
+        border: 2px solid var(--wasabi);
+        border-collapse: collapse;
+    }
+
+    thead {
+        background-color: var(--wasabi);
+    }
+
+    td {
+        border: 2px solid var(--wasabi);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.osake {
+    font-family: "Osake", serif;
+}
+
+.wasabi {
+    color: var(--wasabi);
+}
+
+.wasabi-bg {
+    background-color: var(--wasabi);
+}
+
+.dark-bg {
+    background-color: var(--dark-bg);
+}
