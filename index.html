@@ -1,40 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Vertretungsplan</title>
-</head>
-<body class="dark-bg">
-    <header>
-        <h1 class="osake wasabi">Vertretungsplan</h1>
-        <img src="assets/images/karo-logo-wasabi.png" alt="">
-    </header>
-    <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>Kl.</th>
-                    <th>Std.</th>
-                    <th>Abw.</th>
-                    <th>Ver.</th>
-                    <th>Raum</th>
-                    <th>Info</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>5c_TN</td>
-                    <td>1</td>
-                    <td>Tsc</td>
-                    <td>SDi</td>
-                    <td>C014</td>
-                    <td>_Fach:E</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style/style.css" />
+		<title>Vertretungsplan</title>
+	</head>
+	<body class="dark-bg">
+		<header>
+			<h1 class="osake wasabi">Vertretungsplan</h1>
+			<div id="logo">
+				<img id="karo" src="/assets/images/icon/karo.gif" alt="" />
+				<img id="fisch" src="/assets/images/icon/fisch.svg" alt="" />
+			</div>
+		</header>
+		<noscript
+			>JavaScript muss zugelassen werden, damit Inhalte angezeigt werden
+			können.</noscript
+		>
+		<main>
+			<section id="heute" class="table-container">
+				<table>
+					<caption>
+						Di, 21.06.2022 - KW 25
+					</caption>
+					<thead>
+						<tr>
+							<th>Kl.</th>
+							<th>Std.</th>
+							<th>Abw.</th>
+							<th>Ver.</th>
+							<th>Raum</th>
+							<th>Info</th>
+						</tr>
+					</thead>
+					<tbody id="dataHeute">
+						<!-- injected from heute.json -->
+					</tbody>
+				</table>
+			</section>
+
+			<section class="table-container">
+				<table>
+					<caption>
+						Mi, 22.06.2022 - KW 25
+					</caption>
+					<thead>
+						<tr>
+							<th>Kl.</th>
+							<th>Std.</th>
+							<th>Abw.</th>
+							<th>Ver.</th>
+							<th>Raum</th>
+							<th>Info</th>
+						</tr>
+					</thead>
+					<tbody id="dataMorgen">
+						<!-- injected from morgen.json -->
+					</tbody>
+				</table>
+			</section>
+			<section id="notes">
+				<h2>Nachrichten der Schulleitung am Dienstag, 21.06.2022</h2>
+				<!-- injected from nachrichten.json -->
+			</section>
+		</main>
+		<footer>
+			<div>
+				Letzte Aktualisierung:
+				<time id="update"></time>
+			</div>
+		</footer>
+		<script src="injectData.js"></script>
+		<script>
+			const time = document.getElementById("update");
+			let now = new Date();
+			let dd = now.getDate();
+			let mm = now.getMonth() + 1;
+			let yyyy = now.getFullYear();
+			let h = now.getHours();
+			let m = now.getMinutes();
+			let s = now.getSeconds();
+			time.innerText =
+				dd + "." + mm + "." + yyyy + " " + h + ":" + m + ":" + s;
+
+			let timer = 60;
+			setInterval(() => {
+				timer--;
+				if (timer == 0) window.location.href = "/";
+			}, 1000);
+
+
+
+			setTimeout(() => {
+				scrollTable();
+			}, 1000);
+			function scrollTable() {
+				let currentRow = 0;
+				setInterval(() => {
+					let row = document.getElementById("row" + currentRow);
+					row.scrollIntoView({behavior: "smooth"});
+					currentRow++;
+					//TODO nach oben springen, wenn fertig gescrollt
+				}, 1000);
+			}
+		</script>
+	</body>
 </html>
