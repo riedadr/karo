@@ -73,6 +73,7 @@
 			</div>
 		</footer>
 		<script src="injectData.js"></script>
+		<script src="scroll.js"></script>
 		<script>
 			const time = document.getElementById("update");
 			let now = new Date();
@@ -89,22 +90,7 @@
 			setInterval(() => {
 				timer--;
 				if (timer == 0) window.location.href = "/";
-			}, 1000);
-
-
-
-			setTimeout(() => {
-				scrollTable();
-			}, 1000);
-			function scrollTable() {
-				let currentRow = 0;
-				setInterval(() => {
-					let row = document.getElementById("row" + currentRow);
-					row.scrollIntoView({behavior: "smooth"});
-					currentRow++;
-					//TODO nach oben springen, wenn fertig gescrollt
-				}, 1000);
-			}
+			}, 2000);
 		</script>
 	</body>
 </html>

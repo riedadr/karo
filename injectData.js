@@ -10,7 +10,7 @@ function injectDay(tbodyID, json) {
 		.then((data) => {
 			data.forEach((item, index) => {
 				let row = document.createElement("tr");
-				row.id = "row" + index;
+				row.id = tbodyID + "Row" + index;
 
 				let klasse = document.createElement("td");
                 klasse.className = "klasse";

@@ -9,7 +9,31 @@
     },
     {
         "klasse": "5c_TN",
-        "std": 1,
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "SDi",
+        "raum": "C014",
+        "info": "_Fach: E"
+    },
+    {
+        "klasse": "5c_TN",
+        "std": 3,
+        "abw": "Tsc",
+        "ver": "SDi",
+        "raum": "C014",
+        "info": "_Fach: E"
+    },
+    {
+        "klasse": "5c_TN",
+        "std": 4,
+        "abw": "Tsc",
+        "ver": "SDi",
+        "raum": "C014",
+        "info": "_Fach: E"
+    },
+    {
+        "klasse": "5c_TN",
+        "std": 5,
         "abw": "Tsc",
         "ver": "SDi",
         "raum": "C014",
@@ -224,28 +248,100 @@
         "info": "_Fach: E"
     },
     {
-        "klasse": "5c_TN",
-        "std": 1,
+        "klasse": "5a_M",
+        "std": 2,
         "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
     },
     {
-        "klasse": "5c_TN",
-        "std": 1,
+        "klasse": "5a_M",
+        "std": 2,
         "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
     },
     {
-        "klasse": "5c_TN",
-        "std": 1,
+        "klasse": "5a_M",
+        "std": 2,
         "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
+    },
+    {
+        "klasse": "5a_M",
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
+    },
+    {
+        "klasse": "5a_M",
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
+    },
+    {
+        "klasse": "5a_M",
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
+    },
+    {
+        "klasse": "5a_M",
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
+    },
+    {
+        "klasse": "5a_M",
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
+    },
+    {
+        "klasse": "5a_M",
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
+    },
+    {
+        "klasse": "5a_M",
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
+    },
+    {
+        "klasse": "5a_M",
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
+    },
+    {
+        "klasse": "5a_M",
+        "std": 2,
+        "abw": "Tsc",
+        "ver": "Gsc",
+        "raum": "C015",
+        "info": "AA Englisch oder Geo Fach: E"
     },
     {
         "klasse": "5a_M",

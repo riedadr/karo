@@ -119,29 +119,44 @@ main section {
   width: 100%;
 }
 
-main .table-container {
-  max-height: calc(100vh - 2 * var(--nav-height) - 0.5rem);
-  overflow: auto;
+main tbody::-webkit-scrollbar {
+  display: none;
 }
 
 main table {
+  position: relative;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
 }
 
 main table caption {
+  height: 1.5rem;
   text-align: left;
+  background-color: var(--dark-bg);
 }
 
 main table thead {
+  height: 1.5rem;
   background-color: var(--wasabi);
+}
+
+main table tbody {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  max-height: calc(100vh - 2 * var(--nav-height) - 0.5rem - 3rem);
+  overflow-y: auto;
 }
 
 main table td,
 main table th {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+
+main table td {
   border: 2px solid var(--wasabi);
 }
 
