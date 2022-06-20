@@ -10,6 +10,7 @@
 body {
 	color: white;
 	font-family: 'Oswald', sans-serif;
+	font-size: larger;
 }
 
 * {
@@ -22,7 +23,7 @@ body {
 	--wasabi: #84af75;
 	--dark-fg: #111827;
 	--dark-bg: #1f2937;
-	--nav-height: 4rem;
+	--nav-height: 64px;
 }
 
 /*
@@ -97,94 +98,126 @@ main {
 
 	section {
 		width: 100%;
-		
+
 	}
 
 	tbody::-webkit-scrollbar {
 		display: none;
 	}
 
-	table {
-		position: relative;
-		width: 100%;
-		text-align: left;
+	table.fixed_header {
+
+		table-layout: fixed;
 		border-collapse: collapse;
+		text-align: left;
+		width: 100%;
+		border: 2px solid var(--wasabi);
+
+		font-size: larger;
 
 		caption {
-			height: 1.5rem;
 			text-align: left;
 			background-color: var(--dark-bg);
 		}
 
 		thead {
-			height: 1.5rem;
-			background-color: var(--wasabi);
+			background: var(--wasabi);
+			color: #fff;
+		}
+
+		thead tr {
+			display: block;
 		}
 
 		tbody {
-			position: absolute;
-			top: 3rem;
-			left: 0;
-			right: 0;
-			max-height: calc(100vh - 2 * var(--nav-height) - 0.5rem - 3rem);
-			overflow-y: auto;
+			display: block;
+			width: 100%;
+			overflow: auto;
+			max-height: calc(100vh - 64px - 32px - 110px);
 
+			tr:nth-child(even) {
+				background-color: var(--dark-fg);
+			}
 
 		}
 
-		
 
-		td,
-		th {
-			padding-left: 0.25rem;
-			padding-right: 0.25rem;
-			
-		}
+
+		th,
 		td {
-			border: 2px solid var(--wasabi);
-		}
+			padding-left: 0.5rem;
+			padding-right: 1rem;
+			vertical-align: top;
 
+			&.klasse {
+				background-color: var(--wasabi);
+			}
 
-
-
-		.klasse {
-			background-color: var(--wasabi);
+			&.info {
+				width: 100%;
+			}
 		}
 	}
 
-	#notes {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
 
-		.note {
-			padding: 0.5rem;
-			border: 2px solid var(--wasabi);
 
-			time {
-				font-weight: bold;
-			}
 
-			ul {
-				padding-left: 1rem;
-				list-style: "🍥";
-			}
+
+
+
+}
+
+#notes {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	.note {
+		padding: 0.5rem;
+		border: 2px solid var(--wasabi);
+
+		time {
+			font-weight: bold;
+		}
+
+		ul {
+			padding-left: 1.5rem;
 		}
 	}
 }
+
 
 footer {
 	position: absolute;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 	bottom: 0;
 	width: 100%;
-	height: var(--nav-height);
+	height: 2rem;
 }
 
+section#lag {
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
+	background-color: rgba(0, 0, 0, 0.75);
 
+	h1 {
+		font-size: xx-large;
 
+	}
 
+}
 
 
 

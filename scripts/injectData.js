@@ -18,22 +18,27 @@ function injectDay(tbodyID, json) {
 				row.appendChild(klasse);
 
 				let std = document.createElement("td");
+				std.className = "std";
 				std.innerText = item.std;
 				row.appendChild(std);
 
 				let abw = document.createElement("td");
+				abw.className = "abw";
 				abw.innerText = item.abw;
 				row.appendChild(abw);
 
 				let ver = document.createElement("td");
+				ver.className = "ver";
 				ver.innerText = item.ver;
 				row.appendChild(ver);
 
 				let raum = document.createElement("td");
+				raum.className = "raum";
 				raum.innerText = item.raum;
 				row.appendChild(raum);
 
 				let info = document.createElement("td");
+				info.className = "info";
 				info.innerText = item.info;
 				row.appendChild(info);
 

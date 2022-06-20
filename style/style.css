@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap");
 @font-face {
@@ -9,6 +8,7 @@
 body {
   color: white;
   font-family: 'Oswald', sans-serif;
+  font-size: larger;
 }
 
 * {
@@ -22,7 +22,7 @@ body {
   --wasabi: #84af75;
   --dark-fg: #111827;
   --dark-bg: #1f2937;
-  --nav-height: 4rem;
+  --nav-height: 64px;
 }
 
 /*
@@ -123,48 +123,58 @@ main tbody::-webkit-scrollbar {
   display: none;
 }
 
-main table {
-  position: relative;
-  width: 100%;
-  text-align: left;
+main table.fixed_header {
+  table-layout: fixed;
   border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  border: 2px solid var(--wasabi);
+  font-size: larger;
 }
 
-main table caption {
-  height: 1.5rem;
+main table.fixed_header caption {
   text-align: left;
   background-color: var(--dark-bg);
 }
 
-main table thead {
-  height: 1.5rem;
+main table.fixed_header thead {
+  background: var(--wasabi);
+  color: #fff;
+}
+
+main table.fixed_header thead tr {
+  display: block;
+}
+
+main table.fixed_header tbody {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  max-height: calc(100vh - 64px - 32px - 110px);
+}
+
+main table.fixed_header tbody tr:nth-child(even) {
+  background-color: var(--dark-fg);
+}
+
+main table.fixed_header th,
+main table.fixed_header td {
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  vertical-align: top;
+}
+
+main table.fixed_header th.klasse,
+main table.fixed_header td.klasse {
   background-color: var(--wasabi);
 }
 
-main table tbody {
-  position: absolute;
-  top: 3rem;
-  left: 0;
-  right: 0;
-  max-height: calc(100vh - 2 * var(--nav-height) - 0.5rem - 3rem);
-  overflow-y: auto;
+main table.fixed_header th.info,
+main table.fixed_header td.info {
+  width: 100%;
 }
 
-main table td,
-main table th {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
-main table td {
-  border: 2px solid var(--wasabi);
-}
-
-main table .klasse {
-  background-color: var(--wasabi);
-}
-
-main #notes {
+#notes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,25 +185,54 @@ main #notes {
   gap: 1rem;
 }
 
-main #notes .note {
+#notes .note {
   padding: 0.5rem;
   border: 2px solid var(--wasabi);
 }
 
-main #notes .note time {
+#notes .note time {
   font-weight: bold;
 }
 
-main #notes .note ul {
-  padding-left: 1rem;
-  list-style: "🍥";
+#notes .note ul {
+  padding-left: 1.5rem;
 }
 
 footer {
   position: absolute;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   bottom: 0;
   width: 100%;
-  height: var(--nav-height);
+  height: 2rem;
+}
+
+section#lag {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+section#lag h1 {
+  font-size: xx-large;
 }
 
 .osake {

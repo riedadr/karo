@@ -1,31 +1,27 @@
-//Heute
-const heute = document.getElementById("dataHeute").children;
-console.log(heute);
+const scrollTime  = 1500;		//Millisekunden, nach denen zur nächsten Zeile gescrollt wird
 
+const heute = document.getElementById("dataHeute").children;
 scrollHeute();
 function scrollHeute() {
 	let currentRow = 0;
 	setInterval(() => {
-        if (currentRow >= heute.length) currentRow  = 0;
-        console.log("Heute", currentRow);
-        
+		if (currentRow + 10 >= heute.length) currentRow = 0;
+
 		let row = document.getElementById("dataHeuteRow" + currentRow);
 		row.scrollIntoView();
 		currentRow++;
-	}, 1000);
+	}, scrollTime);
 }
 
 const morgen = document.getElementById("dataMorgen").children;
-
-    scrollMorgen();
+scrollMorgen();
 function scrollMorgen() {
 	let currentRow = 0;
 	setInterval(() => {
-        if (currentRow >= morgen.length) currentRow  = 0;
-        console.log("Morgen", currentRow);
-        
+		if (currentRow >= morgen.length) currentRow = 0;
+
 		let row = document.getElementById("dataMorgenRow" + currentRow);
 		row.scrollIntoView();
 		currentRow++;
-	}, 1000);
+	}, scrollTime);
 }

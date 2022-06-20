@@ -11,7 +11,7 @@
 		<header>
 			<h1 class="osake wasabi">Vertretungsplan</h1>
 			<div id="logo">
-				<img id="karo" src="/assets/images/icon/karo.gif" alt="" />
+				<img id="karo" src="/assets/images/icon/karo-glitch.gif" alt="" />
 				<img id="fisch" src="/assets/images/icon/fisch.svg" alt="" />
 			</div>
 		</header>
@@ -21,18 +21,19 @@
 		>
 		<main>
 			<section id="heute" class="table-container">
-				<table>
+				
+				<table class="fixed_header">
 					<caption>
 						Di, 21.06.2022 - KW 25
 					</caption>
 					<thead>
 						<tr>
-							<th>Kl.</th>
-							<th>Std.</th>
-							<th>Abw.</th>
-							<th>Ver.</th>
-							<th>Raum</th>
-							<th>Info</th>
+							<th class="klasse">Kl.</th>
+							<th class="std">Std.</th>
+							<th class="abw">Abw.</th>
+							<th class="ver">Ver.</th>
+							<th class="raum">Raum</th>
+							<th class="info">Info</th>
 						</tr>
 					</thead>
 					<tbody id="dataHeute">
@@ -42,18 +43,18 @@
 			</section>
 
 			<section class="table-container">
-				<table>
+				<table  class="fixed_header">
 					<caption>
 						Mi, 22.06.2022 - KW 25
 					</caption>
 					<thead>
 						<tr>
-							<th>Kl.</th>
-							<th>Std.</th>
-							<th>Abw.</th>
-							<th>Ver.</th>
-							<th>Raum</th>
-							<th>Info</th>
+							<th class="klasse">Kl.</th>
+							<th class="std">Std.</th>
+							<th class="abw">Abw.</th>
+							<th class="ver">Ver.</th>
+							<th class="raum">Raum</th>
+							<th class="info">Info</th>
 						</tr>
 					</thead>
 					<tbody id="dataMorgen">
@@ -68,29 +69,21 @@
 		</main>
 		<footer>
 			<div>
-				Letzte Aktualisierung:
+				&copy; Abistreich Inc. :) 
+				- Letzte Aktualisierung:
 				<time id="update"></time>
+				- wird aktualisiert in: 
+				<time id="timer">60</time>s 
 			</div>
 		</footer>
-		<script src="injectData.js"></script>
-		<script src="scroll.js"></script>
-		<script>
-			const time = document.getElementById("update");
-			let now = new Date();
-			let dd = now.getDate();
-			let mm = now.getMonth() + 1;
-			let yyyy = now.getFullYear();
-			let h = now.getHours();
-			let m = now.getMinutes();
-			let s = now.getSeconds();
-			time.innerText =
-				dd + "." + mm + "." + yyyy + " " + h + ":" + m + ":" + s;
-
-			let timer = 60;
-			setInterval(() => {
-				timer--;
-				if (timer == 0) window.location.href = "/";
-			}, 2000);
+		<section id="lag">
+			<img id="fisch" src="/assets/images/icon/fisch-glitch.gif" alt="" />
+			<h1 class="osake"><span class="wasabi">Was</span>abi 2022</h1>
+		</section>
+		<script src="/scripts/injectData.js"></script>
+		<script src="/scripts/scroll.js"></script>
+		<script src="/scripts/timing.js">
+			
 		</script>
 	</body>
 </html>
