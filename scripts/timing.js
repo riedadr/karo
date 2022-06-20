@@ -3,24 +3,23 @@ let updateTimer = 60; //Sekunden, nach denen die Seite neu geladen werden soll
 const time = document.getElementById("update");
 const timerElement = document.getElementById("timer");
 
-const options = {
+fetch("https://worldtimeapi.org/api/ip", {
 	method: "GET",
-	headers: {
-		"X-RapidAPI-Key": "9cfe91c0aemsh85402594fda58fdp1eb483jsnb8a2def2a7c4",
-		"X-RapidAPI-Host": "world-clock.p.rapidapi.com",
-	},
-};
-
-fetch("https://world-clock.p.rapidapi.com/json/utc/now", options)
+})
 	.then((response) => response.json())
 	.then((response) => {
 		console.log(response);
-		showTime(response.currentDateTime);
+		showTime(response.datetime);
+		startOverlay(response.datetime);
 	})
-	.catch((err) => console.error(err));
+	.catch((err) => {
+		console.error(err);
+		let fallbackTime = new Date();
+		showTime(fallbackTime.toUTCString());
+		startOverlay(fallbackTime.toUTCString());
+	});
 
 function showTime(fetchedTime) {
-	console.log(fetchedTime);
 	let loadTime = new Date(fetchedTime);
 	let dd = twoDigits(loadTime.getDate());
 	let mm = twoDigits(loadTime.getMonth() + 1);
@@ -30,7 +29,6 @@ function showTime(fetchedTime) {
 	let s = twoDigits(loadTime.getSeconds());
 	time.innerText = dd + "." + mm + "." + yyyy + " " + h + ":" + m + ":" + s;
 }
-
 
 function twoDigits(val) {
 	if (val.toString().length < 2) {
