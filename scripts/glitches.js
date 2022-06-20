@@ -1,11 +1,7 @@
-const phase1Time = new Date("2022-06-21T01:20:00+02:00");
-const phase2Time = new Date("2022-06-21T01:21:00+02:00");
-const phase3Time = new Date("2022-06-21T01:22:00+02:00");
-/*
 const phase1Time = new Date("2022-06-21T07:50:00+02:00");
 const phase2Time = new Date("2022-06-21T09:20:00+02:00");
 const phase3Time = new Date("2022-06-21T11:05:00+02:00");
-*/
+
 //Fisch Overlay (wird von timing.js gestartet)
 function startOverlay(time) {
 	let now = new Date(time);
