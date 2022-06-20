@@ -90,7 +90,7 @@ header {
 main {
 	position: absolute;
 	top: var(--nav-height);
-	width: 100vw;
+	width: 100%;
 	padding: 0.25rem;
 	color: white;
 	display: flex;
@@ -98,16 +98,21 @@ main {
 
 	section {
 		width: 100%;
+	}
+
+	.table-container {
+		width: 100%;
+		overflow-y: auto;
+		max-height: calc(100vh - 64px - 32px - 50px);
 
 	}
 
-	tbody::-webkit-scrollbar {
+	.table-container::-webkit-scrollbar {
 		display: none;
 	}
 
-	table.fixed_header {
+	table {
 
-		table-layout: fixed;
 		border-collapse: collapse;
 		text-align: left;
 		width: 100%;
@@ -115,25 +120,21 @@ main {
 
 		font-size: larger;
 
-		caption {
-			text-align: left;
-			background-color: var(--dark-bg);
-		}
-
 		thead {
 			background: var(--wasabi);
 			color: #fff;
-		}
 
-		thead tr {
-			display: block;
+			th {
+				position: sticky;
+				top: 0;
+				background: var(--wasabi);
+
+			}
 		}
 
 		tbody {
-			display: block;
 			width: 100%;
-			overflow: auto;
-			max-height: calc(100vh - 64px - 32px - 110px);
+
 
 			tr:nth-child(even) {
 				background-color: var(--dark-fg);
@@ -141,13 +142,12 @@ main {
 
 		}
 
-
-
 		th,
 		td {
 			padding-left: 0.5rem;
 			padding-right: 1rem;
 			vertical-align: top;
+			border: none;
 
 			&.klasse {
 				background-color: var(--wasabi);
@@ -205,18 +205,35 @@ section#lag {
 	bottom: 0;
 	opacity: 0;
 
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
 
 	background-color: rgba(0, 0, 0, 0.75);
 
 	h1 {
 		font-size: xx-large;
-
 	}
 
+	#phase1, #phase2 {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#phase3 {
+		display: none;
+		width: 100%;
+		height: 100%;
+
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		background: url("/assets/images/phase3.gif");
+		background-size: cover;
+	}
 }
 
 

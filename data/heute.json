@@ -1,435 +1,194 @@
 [
-    
     {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
+        "klasse": "6a",
         "std": 2,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "abw": "Fra",
+        "ver": "Geb",
+        "raum": "Findet Nemo",
+        "info": "wer Dorie findet ist falsch"
     },
     {
-        "klasse": "5c_TN",
+        "klasse": "6a",
         "std": 3,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "abw": "Fra",
+        "ver": "Geb",
+        "raum": "Findet Nemo",
+        "info": "wer Dorie findet ist falsch"
     },
     {
-        "klasse": "5c_TN",
+        "klasse": "6d",
+        "std": 3,
+        "abw": "Skü",
+        "ver": "Tob",
+        "raum": "Hans im Glück",
+        "info": "Burger sind aus"
+    },
+    {
+        "klasse": "6d",
         "std": 4,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "abw": "Skü",
+        "ver": "Tob",
+        "raum": "Hans im Glück",
+        "info": "Burger sind aus"
     },
     {
-        "klasse": "5c_TN",
-        "std": 5,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "klasse": "6e",
+        "std": 3,
+        "abw": "ScF",
+        "ver": "Mil",
+        "raum": "How I Met your mother",
+        "info": " "
     },
     {
-        "klasse": "5c_TN",
+        "klasse": "7b",
         "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "abw": "Wln",
+        "ver": "Sot",
+        "raum": "Shadowhunters",
+        "info": "AA: S.140 Nr.2,3,4"
     },
     {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "klasse": "7b",
+        "std": 3,
+        "abw": "Sca",
+        "ver": "MlA",
+        "raum": "Queen",
+        "info": " "
     },
     {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "klasse": "7c",
+        "std": 4,
+        "abw": "Kur",
+        "ver": "Gnz",
+        "raum": "Gestiefelter Kater",
+        "info": ""
     },
     {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
+        "klasse": "7d",
+        "std": 3,
+        "abw": "Gol",
+        "ver": "Düt",
+        "raum": "Rosenheim Cops",
+        "info": "AA: S.21 Nr.6,9"
     },
     {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5c_TN",
-        "std": 1,
-        "abw": "Tsc",
-        "ver": "SDi",
-        "raum": "C014",
-        "info": "_Fach: E"
-    },
-    {
-        "klasse": "5a_M",
+        "klasse": "7e",
         "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "abw": "But",
+        "ver": "Die",
+        "raum": "Luftmatratze",
+        "info": ""
     },
     {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "klasse": "8a",
+        "std": 1,
+        "abw": "Cze",
+        "ver": "Blu",
+        "raum": "Jonny Depp",
+        "info": "R€û$vj×˜G‡@õ7cµ2UMrÊÇóèÈWbz†ü"
     },
     {
-        "klasse": "5a_M",
+        "klasse": "8a",
         "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "abw": "Cze",
+        "ver": "Blu",
+        "raum": "Jonny Depp",
+        "info": "R€û$vj×˜G‡@õ7cµ2UMrÊÇóèÈWbz†ü"
     },
     {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "klasse": "8b",
+        "std": 4,
+        "abw": "Hgg",
+        "ver": "Ham",
+        "raum": "Arielle",
+        "info": ""
     },
     {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "klasse": "8e",
+        "std": 3,
+        "abw": "Hlm",
+        "ver": "Ehr",
+        "raum": "Rumpelstilzchen",
+        "info": "Û¼w†3•ÖYiå&ÊuËAâ“€"
     },
     {
-        "klasse": "5a_M",
+        "klasse": "9a",
         "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "abw": "GeK",
+        "ver": "GrE",
+        "raum": "Büroklammer",
+        "info": ""
     },
     {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "klasse": "9a",
+        "std": 3,
+        "abw": "Ktv",
+        "ver": "HuF",
+        "raum": "Tischlein Deck dich",
+        "info": ""
     },
     {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
+        "klasse": "9c",
+        "std": 3,
+        "abw": "Jai",
         "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "raum": "Harry Styles",
+        "info": "fxVq’§Y™¾Àƒ9|‰ñç/ÿkšM›f6Ìö¿þ6Ž"
     },
     {
-        "klasse": "5a_M",
+        "klasse": "9d",
         "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "abw": "Kab",
+        "ver": "Leo",
+        "raum": "Hot Pants",
+        "info": ""
     },
     {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "klasse": "10c",
+        "std": 4,
+        "abw": "Lud",
+        "ver": "Mus",
+        "raum": "Tom Holland",
+        "info": ""
     },
     {
-        "klasse": "5a_M",
+        "klasse": "10d",
         "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "abw": "TaB",
+        "ver": "WoA",
+        "raum": "Vaiana",
+        "info": ""
     },
     {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "klasse": "11a",
+        "std": 4,
+        "abw": "KuE",
+        "ver": "Kro",
+        "raum": "Savanne",
+        "info": ""
     },
     {
-        "klasse": "5a_M",
+        "klasse": "11b",
         "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "abw": "HaC",
+        "ver": "Aic",
+        "raum": "Bikini",
+        "info": ""
     },
     {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "klasse": "11e",
+        "std": 3,
+        "abw": "Bli",
+        "ver": "Des",
+        "raum": "Dumbo",
+        "info": "DÿÉ€n3‡qüáDXcÒ$8ü"
     },
     {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
-    },
-    {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
-    },
-    {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
-    },
-    {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
-    },
-    {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
-    },
-    {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
-    },
-    {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
-    },
-    {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
-    },
-    {
-        "klasse": "5a_M",
-        "std": 2,
-        "abw": "Tsc",
-        "ver": "Gsc",
-        "raum": "C015",
-        "info": "AA Englisch oder Geo Fach: E"
+        "klasse": "10a",
+        "std": 4,
+        "abw": "Hog",
+        "ver": "Q12",
+        "raum": "The Crown",
+        "info": "DÿÉ€n3‡qüáDXcÒ$8ü"
     }
 ]
